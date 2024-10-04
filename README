@@ -1,0 +1,25 @@
+# Sécurisation d'une API avec Express.js
+
+Ce projet est une simple API Express.js qui démontre l'intégration des mécanismes de sécurité tels que **Helmet**, **express-rate-limit**, et **CORS** pour protéger contre les vulnérabilités courantes, les attaques par déni de service (DoS) et les restrictions d'accès cross-origin.
+
+## Fonctionnalités
+
+1. **Endpoint GET `/api/hello`** :
+   - Retourne un message JSON `{ "message": "Hello world" }`.
+
+2. **Sécurisation avec Helmet** :
+   - Ajout du package Helmet pour protéger l'API des vulnérabilités courantes comme les attaques de script intersites (XSS), le reniflement de type MIME, et plus encore.
+
+3. **Limitation du taux de requêtes avec express-rate-limit** :
+   - Mise en place d'une limitation des requêtes pour prévenir les attaques DoS en limitant le nombre de requêtes par IP.
+
+4. **Sécurisation des accès avec CORS (Cross-Origin Resource Sharing)** :
+   - Ajout et configuration de CORS pour contrôler les accès aux requêtes cross-origin en autorisant uniquement certains domaines.
+
+## Installation
+
+1. **Cloner le dépôt** :
+
+   ```bash
+   git clone https://github.com/votre-repo/secure-api-express.git
+   cd secure-api-express
